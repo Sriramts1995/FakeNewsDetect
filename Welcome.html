@@ -1,0 +1,142 @@
+<html>
+   <head>
+      <style>
+         h1 {
+         text-align: center;
+         }
+         body {font-family: Arial, Helvetica, sans-serif;}
+         form {border: 3px solid #f1f1f1;}
+         input[type=text], input[type=password] {
+         width: 100%;
+         padding: 12px 20px;
+         margin: 8px 0;
+         display: inline-block;
+         border: 1px solid #ccc;
+         box-sizing: border-box;
+         }
+         button {
+         background-color: #04AA6D;
+         color: white;
+         padding: 14px 20px;
+         margin: 8px 0;
+         border: none;
+         cursor: pointer;
+         width: 100%;
+         }
+         button:hover {
+         opacity: 0.8;
+         }
+         .cancelbtn {
+         width: auto;
+         padding: 10px 18px;
+         background-color: #f44336;
+         }
+         .imgcontainer {
+         text-align: center;
+         margin: 24px 0 12px 0;
+         }
+         img.avatar {
+         width: 40%;
+         border-radius: 50%;
+         }
+         .container {
+         padding: 16px;
+         }
+         span.psw {
+         float: right;
+         padding-top: 16px;
+         }
+         /* Change styles for span and cancel button on extra small screens */
+         @media screen and (max-width: 300px) {
+         span.psw {
+         display: block;
+         float: none;
+         }
+         .cancelbtn {
+         width: 100%;
+         }
+         }
+      </style>
+	  <!--<script type="text/javascript" src="Welcome.js"></script>-->
+   </head>
+   <body>
+      <h1 style="color:white;background-color:black;text-align:center;height:70px"; font-family:"Cursive">
+      <p style="font-family:Cursive">Fake News Detection By Vignesh CS 
+         <a style="color:white;font-size:20px" href="D:/FakeNewDetectionSystem/FNDV/UI_Files/HomeFile/AdminLogin.html">Admin Login</a>
+      </p>
+      </h1>
+      <h2>Registration Form</h2>
+      <form action="D:/FakeNewDetectionSystem/FNDV/UI_Files/HomeFile/LiveNews.html" method="post">
+         <div class="imgcontainer">
+            <img src="D:/FakeNewDetectionSystem/FNDV/UI_Files/UIImages/img_avatar2.png" alt="Avatar" class="avatar" width="150" height="400">
+         </div>
+         <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw"  id="psw" required>
+            <label for="numb"><b>Number (only numeric digits)</b></label>
+			<input type="text" placeholder="Enter number" name="numb" id="numb"  required pattern="[0-9]+">
+            <button type="submit" onClick="onLoginClick()">Login</button>
+            <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+         </div>
+         <!--<div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+         </div>-->
+      </form>
+   </body>
+   <script>
+   /*function onLoginClick()
+   {
+	var counts=0;
+    var uname=document.getElementById("uname").value;
+	var pwd=document.getElementById("psw").value;
+	var numb=document.getElementById("numb").value;
+	localStorage.setItem('getPhone',numb);
+	localStorage.setItem('errorthrown',"false");
+	var totallogincred=uname+pwd+numb;
+	if(localStorage.getItem('getLoginValues')){
+	for (var i=0;i<localStorage.getItem('getLoginValues').split(",").length;i++)
+	{
+	if(totallogincred===localStorage.getItem('getLoginValues').split(",")[i])
+	{
+	localStorage.setItem('errorthrown',"false");
+	localStorage.setItem('registeredphone',numb);
+	window.location  = "D:/FakeNewDetectionSystem/FNDV/UI_Files/HomeFile/LiveNews.html";
+	}
+	else
+	{
+	counts++;
+	}
+	}
+	}
+	if(localStorage.getItem('getLoginValues')&& counts===localStorage.getItem('getLoginValues').split(",").length)
+	{
+	for (var i=0;i<localStorage.getItem('getPhone').split(",").length;i++)
+	{
+		if(localStorage.getItem('registeredphone') && numb===localStorage.getItem('registeredphone').split(",")[i])
+		{
+		localStorage.setItem('errorthrown',"true");
+		alert("Please check the login against the phone number and proceed");
+		}
+	}
+   }
+   	if(localStorage.getItem('errorthrown')==="false")
+	{
+	localStorage.setItem('getLoginValues',totallogincred);
+	localStorage.setItem('registeredphone',numb);
+	localStorage.setItem('errorthrown',"false");
+	window.location  = "D:/FakeNewDetectionSystem/FNDV/UI_Files/HomeFile/LiveNews.html";
+	}
+   }*/
+   </script>
+   <footer>
+      <p style="color:white;background-color:black;text-align:left;height:70px;font-family:Cursive">Contact me @<br />
+         Vignesh CS<br />
+         <a style="color:white;" href="https://www.gmail.com">vigneshcamalapuram@gmail.com</a>
+      </p>
+   </footer>
+</html>

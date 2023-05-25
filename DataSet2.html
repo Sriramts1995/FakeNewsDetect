@@ -1,0 +1,113 @@
+<html>
+   <head>
+      <style>
+         h1 {
+         text-align: center;
+         }
+         body {font-family: Arial, Helvetica, sans-serif;}
+         form {border: 3px solid #f1f1f1;}
+         input[type=text], input[type=password] {
+         width: 100%;
+         padding: 12px 20px;
+         margin: 8px 0;
+         display: inline-block;
+         border: 1px solid #ccc;
+         box-sizing: border-box;
+         }
+         button {
+         background-color: #04AA6D;
+         color: white;
+         padding: 14px 20px;
+         margin: 8px 0;
+         border: none;
+         cursor: pointer;
+         width: 100%;
+         }
+         button:hover {
+         opacity: 0.8;
+         }
+         .cancelbtn {
+         width: auto;
+         padding: 10px 18px;
+         background-color: #f44336;
+         }
+         .imgcontainer {
+         text-align: center;
+         margin: 24px 0 12px 0;
+         }
+         img.avatar {
+         width: 40%;
+         border-radius: 50%;
+         }
+         .container {
+         padding: 16px;
+         }
+         span.psw {
+         float: right;
+         padding-top: 16px;
+         }
+         /* Change styles for span and cancel button on extra small screens */
+         @media screen and (max-width: 300px) {
+         span.psw {
+         display: block;
+         float: none;
+         }
+         .cancelbtn {
+         width: 100%;
+         }
+         }
+      </style>
+   </head>
+   <body>
+      <h1 style="color:white;background-color:black;text-align:center;height:70px"; font-family:"Cursive">
+      <p style="font-family:Cursive">This is our online news
+	   &nbsp;
+	  <a style="color:white;font-size:20px" href="D:/FakeNewDetectionSystem/FNDV/UI_Files/HomeFile/Welcome.html">Logout</a>
+      </p>
+      </h1>
+      <form action="D:/FakeNewDetectionSystem/FNDV/UI_Files/HomeFile/LiveNews.html" method="post">
+	   <label id="This is Dataset2:" value="This is Dataset2:">This is Dataset2:</label>
+	   <br />
+      <br />
+	   <marquee direction = "up" scrollamount = "2"><label id="Kamal to enter politics" value="Kamal to enter politics">Kamal to enter politics</label>
+	   <br />
+      <br />
+	   <label id="CR7 joins Real Madrid" value="CR7 joins Real Madrid">CR7 joins Real Madrid</label>
+	   <br />
+      <br />
+	   <label id="F3 becomes flop" value="F3 becomes flop">F3 becomes flop</label>
+	   <br />
+      <br />
+	   <label id="SRH team brings 2 new players" value="SRH team brings 2 new players">SRH team brings 2 new players</label>
+	   <br />
+      <br />
+	   <label id="Maharashtra logs 200 more covid cases" value="Maharashtra logs 200 more covid cases">Maharashtra logs 200 more covid cases</label><br />
+      <br />
+	   <label id="Biden falls again in whitehouse" value="Biden falls again in whitehouse">Biden falls again in whitehouse</label></marquee>
+	   <br />
+      <br />
+      </form>
+	  <button onclick="storeDataSet2()">Check Fake News</button>
+   </body>
+   <script>
+   function storeDataSet2()
+   {
+	var mycontent=[];
+	mycontent.push(document.getElementById("This is Dataset2:").id);
+	mycontent.push(document.getElementById("Kamal to enter politics").id);
+	mycontent.push(document.getElementById("CR7 joins Real Madrid").id);
+	mycontent.push(document.getElementById("F3 becomes flop").id);
+	mycontent.push(document.getElementById("SRH team brings 2 new players").id);
+	mycontent.push(document.getElementById("Maharashtra logs 200 more covid cases").id);
+	mycontent.push(document.getElementById("Biden falls again in whitehouse").id);
+	localStorage.setItem('storeDataSet1', mycontent);
+	window.location = "D:\\FakeNewDetectionSystem\\FNDV\\UI_Files\\HomeFile\\CheckFakeNews.html"; 
+   }
+   </script>
+   <footer>
+      <p style="color:white;background-color:black;text-align:left;height:70px;font-family:Cursive">Contact me @<br />
+         Vignesh CS<br />
+         <a style="color:white;" href="https://www.gmail.com">vigneshcamalapuram@gmail.com</a>
+      </p>
+   </footer>
+</html>
